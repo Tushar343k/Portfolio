@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tushar Verma, Java full-stack developer.">
+  <title>Tushar Verma | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem('portfolio-theme')==='dark'||(!localStorage.getItem('portfolio-theme')&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='dark'}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Tushar Verma home">TV<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Switch color theme"><span id="theme-icon">☾</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE DEVELOPER · JAVA FULL STACK</p>
+        <h1>Hi, I'm <span>Tushar Verma.</span></h1>
+        <p class="hero-text">I build practical web applications with Java, Spring Boot, React, and relational databases. I'm currently pursuing an M.Tech in Computer Science and Engineering.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="documents/resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#contact">Contact me</a>
+        </div>
+        <div class="hero-meta"><span><span class="meta-icon">⌘</span> Java · Spring Boot · REST APIs</span><span><span class="meta-icon">◎</span> Open to opportunities</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-card">
+          <div class="visual-top"><span>DEVELOPER PROFILE</span><span class="window-dots">● ● ●</span></div>
+          <div class="avatar" id="avatar"><img src="images/WhatsApp Image 2025-07-26 at 10.51.55 PM.jpeg" alt="Portrait of Tushar Verma" id="profile-image"><span id="avatar-fallback">TV</span></div>
+          <h2>Tushar Verma</h2><p class="muted">Java Full-Stack Developer</p>
+          <div class="code-card"><div><span class="code-purple">const</span> developer = {</div><div class="indent">focus: <span class="code-green">'backend + web'</span>,</div><div class="indent">build: <span class="code-green">'useful products'</span>,</div><div class="indent">learn: <span class="code-green">'every day'</span></div><div>};</div></div>
+          <div class="visual-tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>SQL</span></div>
+        </div><div class="decor decor-one"></div><div class="decor decor-two"></div>
+      </div>
+    </section>
+
+    <section class="section compact-section" id="experience">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow">CAREER</p><h2>Experience</h2></div>
+        <article class="experience-card surface reveal">
+          <div class="experience-head"><div><h3>Freelance Java Developer</h3><p class="muted">Inventory &amp; Order Management System</p></div><span class="date-pill">Jul 2023 – Jun 2025</span></div>
+          <ul class="clean-list"><li>Developed an application to manage products, suppliers, and customer orders using Java, Spring Boot, MySQL, and Hibernate/JPA.</li><li>Implemented JWT authentication and role-based authorization with Spring Security.</li><li>Built 25+ REST APIs with CRUD operations, pagination, sorting, filtering, and validation.</li><li>Improved data access with SQL query and database-indexing optimizations.</li></ul>
+          <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>MySQL</span><span>Hibernate/JPA</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact-section" id="projects">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow">SELECTED WORK</p><h2>Projects</h2></div>
+        <div class="project-grid">
+          <article class="project-card surface reveal"><div class="project-art od-art"><span class="art-label">01 / WEB APPLICATION</span><div class="mini-dashboard"><div class="mini-sidebar"></div><div class="mini-content"><i></i><i></i><i></i><div class="mini-table"><b></b><b></b><b></b></div></div></div><span class="art-symbol">OD</span></div><div class="project-body"><div class="project-title"><h3>OD Management System</h3><span class="project-arrow">↗</span></div><p>A full-stack system for managing student On-Duty records and retrieving relevant entries through flexible filters.</p><ul class="clean-list"><li>Excel-based bulk upload and PostgreSQL storage.</li><li>Multi-criteria filtering, pagination, and Excel export.</li><li>Separate Admin and Faculty roles; deployed frontend and backend.</li></ul><div class="tag-row"><span>React.js</span><span>Spring Boot</span><span>REST APIs</span><span>PostgreSQL</span></div></div></article>
+          <article class="project-card surface reveal"><div class="project-art inventory-art"><span class="art-label">02 / BACKEND SYSTEM</span><div class="inventory-graphic"><div class="box-icon">▦</div><div class="inventory-lines"><i></i><i></i><i></i></div><div class="inventory-stat">25+ <small>REST APIs</small></div></div><span class="art-symbol">IMS</span></div><div class="project-body"><div class="project-title"><h3>Inventory &amp; Order Management</h3><span class="project-arrow">↗</span></div><p>A backend application for organizing product inventory, supplier information, and customer orders.</p><ul class="clean-list"><li>JWT authentication and role-based authorization.</li><li>CRUD endpoints with pagination, sorting, filtering, and validation.</li><li>SQL and indexing improvements for data access.</li></ul><div class="tag-row"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Hibernate/JPA</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-section" id="skills">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow">TOOLKIT</p><h2>Technical Skills</h2></div>
+        <div class="skills-grid">
+          <article class="skill-card surface reveal"><div class="skill-heading"><span class="skill-icon">{ }</span><h3>Languages</h3></div><div class="tag-row"><span>Java</span><span>SQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></article>
+          <article class="skill-card surface reveal"><div class="skill-heading"><span class="skill-icon">⌘</span><h3>Backend &amp; APIs</h3></div><div class="tag-row"><span>Spring Boot</span><span>Spring MVC</span><span>JDBC</span><span>Hibernate/JPA</span><span>REST APIs</span><span>Maven</span><span>Servlet/JSP basics</span><span>JSON</span></div></article>
+          <article class="skill-card surface reveal"><div class="skill-heading"><span class="skill-icon">▤</span><h3>Frontend</h3></div><div class="tag-row"><span>React.js</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+          <article class="skill-card surface reveal"><div class="skill-heading"><span class="skill-icon">◫</span><h3>Database &amp; Tools</h3></div><div class="tag-row"><span>MySQL</span><span>PostgreSQL</span><span>DBMS</span><span>IntelliJ IDEA</span><span>Eclipse</span><span>VS Code</span><span>STS</span><span>Postman</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-section" id="education">
+      <div class="container"><div class="section-heading reveal"><p class="eyebrow">ACADEMICS</p><h2>Education</h2></div>
+        <div class="education-list">
+          <article class="education-card surface reveal"><div class="education-mark">M</div><div class="education-details"><h3>M.Tech, Computer Science &amp; Engineering</h3><p>SRM Institute of Science and Technology</p><span class="muted">Aug 2025 – Present</span></div><strong class="grade">8.51 CGPA</strong></article>
+          <article class="education-card surface reveal"><div class="education-mark">B</div><div class="education-details"><h3>B.Tech, Computer Science &amp; Engineering</h3><p>SRM Institute of Science and Technology</p><span class="muted">Jul 2019 – May 2023</span></div><strong class="grade">8.68 CGPA</strong></article>
+          <article class="education-card surface reveal"><div class="education-mark">JS</div><div class="education-details"><h3>Java Full Stack Development</h3><p>Jspiders · Java Training and Development Center</p><span class="muted">Jan 2024 – Jan 2025</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact"><div class="container contact-panel reveal"><div><p class="eyebrow">LET'S CONNECT</p><h2>Have an opportunity in mind?</h2><p class="muted">Feel free to reach out about software development roles or collaborations.</p></div><div class="contact-actions"><a class="button primary" href="mailto:tusharsoni02001@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://linkedin.com/in/tushar-verma" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div><div class="contact-details"><a href="mailto:tusharsoni02001@gmail.com">tusharsoni02001@gmail.com</a><span>·</span><a href="tel:+917895524006">+91 78955 24006</a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home">TV<span>.</span></a><p>Designed &amp; built by Tushar Verma · <span id="year"></span></p><a class="back-top" href="#home">Back to top ↑</a></div></footer>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
